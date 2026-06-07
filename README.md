@@ -63,7 +63,7 @@ The public website ships with:
 - The canonical and localized pages inline critical above-the-fold CSS, then load Google Fonts and the full stylesheet asynchronously to reduce render-blocking requests.
 - Images, SVG icons and social cards are cached as immutable static assets.
 - Text metadata files such as `robots.txt`, `sitemap.xml`, `humans.txt` and `llms.txt` use a one-day cache.
-- Keep `node_modules/` local only; commit the generated `styles.css` file after running `npm run build`.
+- `node_modules/` is intentionally committed in this repository to mirror the transferred website workspace exactly.
 
 ## Deployment
 
