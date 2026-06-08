@@ -2,6 +2,12 @@
 
 Static Progressive Web App for presenting DEALIoT, DEALHost and DEALData.
 
+## Public Repositories
+
+- DEALIoT: https://github.com/Smartappli/DEALIoT
+- DEALHost: https://github.com/Smartappli/DEALHost
+- DEALData: https://github.com/Smartappli/DEALData
+
 ## Local preview
 
 ```bash

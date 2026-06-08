@@ -1,5 +1,8 @@
 DEAL suite public website
-Repository: https://github.com/Smartappli/DEALIoT
+Repositories:
+DEALIoT: https://github.com/Smartappli/DEALIoT
+DEALHost: https://github.com/Smartappli/DEALHost
+DEALData: https://github.com/Smartappli/DEALData
 Maintainer organization: Smartappli
 Contact: contact@smartappli.com
 Default language: en-US

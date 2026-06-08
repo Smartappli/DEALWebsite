@@ -106,7 +106,9 @@
                 "name": "Smartappli",
                 "url": "https://github.com/Smartappli",
                 "sameAs": [
-                    "https://github.com/Smartappli/DEALIoT"
+                    "https://github.com/Smartappli/DEALIoT",
+                    "https://github.com/Smartappli/DEALHost",
+                    "https://github.com/Smartappli/DEALData"
                 ]
             }, {
                 "@id": "https://smartappli.io/#website",
@@ -130,6 +132,7 @@
                 "license": "https://github.com/Smartappli/DEALIoT/blob/main/LICENSE",
                 "name": "DEALIoT",
                 "operatingSystem": "Linux, Docker, Kubernetes",
+                "sameAs": "https://github.com/Smartappli/DEALIoT",
                 "url": "https://smartappli.io/#products"
             }, {
                 "@id": "https://smartappli.io/#dealhost",
@@ -142,6 +145,7 @@
                 "provider": {
                     "@id": "https://smartappli.io/#organization"
                 },
+                "sameAs": "https://github.com/Smartappli/DEALHost",
                 "serviceType": "Managed data platform hosting",
                 "url": "https://smartappli.io/#products"
             }, {
@@ -155,6 +159,7 @@
                 "provider": {
                     "@id": "https://smartappli.io/#organization"
                 },
+                "sameAs": "https://github.com/Smartappli/DEALData",
                 "serviceType": "Data governance and sharing",
                 "url": "https://smartappli.io/#products"
             }, {
@@ -208,6 +213,7 @@
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#products">Products</a>
+        <a href="#repositories">GitHub</a>
         <a href="#architecture">Platform</a>
         <a href="#proof">Proof</a>
         <a href="#adoption">Adoption</a>
@@ -245,7 +251,7 @@
             <option value="https://smartappli.io/sv/" lang="sv">🇸🇪 Svenska</option>
           </select>
         </div>
-        <a class="star-link" href="https://github.com/Smartappli/DEALIoT">Star on GitHub</a>
+        <a class="star-link" href="#repositories">GitHub repos</a>
         <a class="nav-cta" href="#contact">Request a demo</a>
       </div>
     </header>
@@ -315,6 +321,10 @@
               <li>Stream processing and backfill</li>
               <li>Integrated observability and DLQ</li>
             </ul>
+            <a class="product-link"
+               href="https://github.com/Smartappli/DEALIoT"
+               target="_blank"
+               rel="noopener noreferrer">View DEALIoT on GitHub</a>
           </article>
           <article class="product-card card-host reveal">
             <span class="product-index">02</span>
@@ -327,6 +337,10 @@
               <li>Runbooks, alerts and backups</li>
               <li>Cloud, hybrid or on-prem paths</li>
             </ul>
+            <a class="product-link"
+               href="https://github.com/Smartappli/DEALHost"
+               target="_blank"
+               rel="noopener noreferrer">View DEALHost on GitHub</a>
           </article>
           <article class="product-card card-data reveal">
             <span class="product-index">03</span>
@@ -339,7 +353,58 @@
               <li>Controlled sharing and traceability</li>
               <li>Usable compliance evidence</li>
             </ul>
+            <a class="product-link"
+               href="https://github.com/Smartappli/DEALData"
+               target="_blank"
+               rel="noopener noreferrer">View DEALData on GitHub</a>
           </article>
+        </div>
+      </section>
+      <section id="repositories" class="repositories section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Public GitHub references</p>
+          <h2>Three products, three source references.</h2>
+          <p>
+            The suite is easier to evaluate when the public repositories are explicit. Use these links to inspect scope, documentation and project maturity product by product.
+          </p>
+        </div>
+        <div class="repo-grid">
+          <a class="repo-card repo-iot reveal"
+             href="https://github.com/Smartappli/DEALIoT"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open the DEALIoT GitHub repository">
+            <span>01 / DEALIoT</span>
+            <strong>Real-time IoT platform</strong>
+            <p>
+              MQTT ingestion, Kafka transport, Flink/Beam processing, Airflow orchestration, observability and compliance evidence.
+            </p>
+            <em>github.com/Smartappli/DEALIoT</em>
+          </a>
+          <a class="repo-card repo-host reveal"
+             href="https://github.com/Smartappli/DEALHost"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open the DEALHost GitHub repository">
+            <span>02 / DEALHost</span>
+            <strong>Hosting and operations</strong>
+            <p>
+              Modular hosting assets for operating DEAL workloads with deployment boundaries, infrastructure choices and support routines.
+            </p>
+            <em>github.com/Smartappli/DEALHost</em>
+          </a>
+          <a class="repo-card repo-data reveal"
+             href="https://github.com/Smartappli/DEALData"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open the DEALData GitHub repository">
+            <span>03 / DEALData</span>
+            <strong>Governed data services</strong>
+            <p>
+              Data services for telemetry, WildFi ingestion, catalogues, controlled sharing and governed data workflows.
+            </p>
+            <em>github.com/Smartappli/DEALData</em>
+          </a>
         </div>
       </section>
       <section id="architecture" class="architecture section-shell">
@@ -504,7 +569,7 @@
           <div class="launch-actions">
             <a class="button primary"
                href="mailto:contact@smartappli.com?subject=Demo%20DEAL%20suite">Contact the team</a>
-            <a class="button secondary" href="https://github.com/Smartappli/DEALIoT">Open the GitHub repository</a>
+            <a class="button secondary" href="#repositories">Open the GitHub references</a>
           </div>
         </div>
       </section>

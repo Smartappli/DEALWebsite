@@ -109,7 +109,9 @@
                 "name": "Smartappli",
                 "url": "https://github.com/Smartappli",
                 "sameAs": [
-                    "https://github.com/Smartappli/DEALIoT"
+                    "https://github.com/Smartappli/DEALIoT",
+                    "https://github.com/Smartappli/DEALHost",
+                    "https://github.com/Smartappli/DEALData"
                 ]
             }, {
                 "@id": "https://smartappli.io/#website",
@@ -133,6 +135,7 @@
                 "license": "https://github.com/Smartappli/DEALIoT/blob/main/LICENSE",
                 "name": "DEALIoT",
                 "operatingSystem": "Linux, Docker, Kubernetes",
+                "sameAs": "https://github.com/Smartappli/DEALIoT",
                 "url": "https://smartappli.io/#products"
             }, {
                 "@id": "https://smartappli.io/#dealhost",
@@ -145,6 +148,7 @@
                 "provider": {
                     "@id": "https://smartappli.io/#organization"
                 },
+                "sameAs": "https://github.com/Smartappli/DEALHost",
                 "serviceType": "Hébergement de plateforme de données gérées",
                 "url": "https://smartappli.io/#products"
             }, {
@@ -158,6 +162,7 @@
                 "provider": {
                     "@id": "https://smartappli.io/#organization"
                 },
+                "sameAs": "https://github.com/Smartappli/DEALData",
                 "serviceType": "Gouvernance et partage des données",
                 "url": "https://smartappli.io/#products"
             }, {
@@ -211,6 +216,7 @@
       </a>
       <nav class="site-nav" aria-label="Navigation principale">
         <a href="#products">Produits</a>
+        <a href="#repositories">GitHub</a>
         <a href="#architecture">Plateforme</a>
         <a href="#proof">Preuve</a>
         <a href="#adoption">Adoption</a>
@@ -248,7 +254,7 @@
             <option value="https://smartappli.io/sv/" lang="sv">🇸🇪 Svenska</option>
           </select>
         </div>
-        <a class="star-link" href="https://github.com/Smartappli/DEALIoT">Étoile sur GitHub</a>
+        <a class="star-link" href="#repositories">Dépôts GitHub</a>
         <a class="nav-cta" href="#contact">Demander une démo</a>
       </div>
     </header>
@@ -318,6 +324,10 @@
               <li>Traitement des flux et remplissage</li>
               <li>Observabilité intégrée et DLQ</li>
             </ul>
+            <a class="product-link"
+               href="https://github.com/Smartappli/DEALIoT"
+               target="_blank"
+               rel="noopener noreferrer">Voir DEALIoT sur GitHub</a>
           </article>
           <article class="product-card card-host reveal">
             <span class="product-index">02</span>
@@ -330,6 +340,10 @@
               <li>Runbooks, alertes et sauvegardes</li>
               <li>Parcours cloud, hybrides ou sur site</li>
             </ul>
+            <a class="product-link"
+               href="https://github.com/Smartappli/DEALHost"
+               target="_blank"
+               rel="noopener noreferrer">Voir DEALHost sur GitHub</a>
           </article>
           <article class="product-card card-data reveal">
             <span class="product-index">03</span>
@@ -342,7 +356,58 @@
               <li>Partage et traçabilité maîtrisés</li>
               <li>Preuve de conformité utilisable</li>
             </ul>
+            <a class="product-link"
+               href="https://github.com/Smartappli/DEALData"
+               target="_blank"
+               rel="noopener noreferrer">Voir DEALData sur GitHub</a>
           </article>
+        </div>
+      </section>
+      <section id="repositories" class="repositories section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Références GitHub publiques</p>
+          <h2>Trois produits, trois dépôts sources.</h2>
+          <p>
+            L'évaluation est plus claire lorsque chaque produit pointe vers son dépôt. Ces liens permettent d'inspecter le périmètre, la documentation et la maturité du projet de chaque composant.
+          </p>
+        </div>
+        <div class="repo-grid">
+          <a class="repo-card repo-iot reveal"
+             href="https://github.com/Smartappli/DEALIoT"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Ouvrir le dépôt GitHub DEALIoT">
+            <span>01 / DEALIoT</span>
+            <strong>Plateforme IoT temps réel</strong>
+            <p>
+              Ingestion MQTT, transport Kafka, traitement Flink/Beam, orchestration Airflow, observabilité et preuves de conformité.
+            </p>
+            <em>github.com/Smartappli/DEALIoT</em>
+          </a>
+          <a class="repo-card repo-host reveal"
+             href="https://github.com/Smartappli/DEALHost"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Ouvrir le dépôt GitHub DEALHost">
+            <span>02 / DEALHost</span>
+            <strong>Hébergement et opérations</strong>
+            <p>
+              Composants d'hébergement modulaire pour exploiter les charges DEAL avec limites de déploiement, choix d'infrastructure et routines de support.
+            </p>
+            <em>github.com/Smartappli/DEALHost</em>
+          </a>
+          <a class="repo-card repo-data reveal"
+             href="https://github.com/Smartappli/DEALData"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Ouvrir le dépôt GitHub DEALData">
+            <span>03 / DEALData</span>
+            <strong>Services de données gouvernés</strong>
+            <p>
+              Services de données pour la télémétrie, l'ingestion WildFi, les catalogues, le partage contrôlé et les workflows de gouvernance.
+            </p>
+            <em>github.com/Smartappli/DEALData</em>
+          </a>
         </div>
       </section>
       <section id="architecture" class="architecture section-shell">
@@ -358,12 +423,12 @@
           </div>
           <div class="flow-column">
             <span>02</span>
-            <strong>Transports</strong>
+            <strong>Transport</strong>
             <p>Kafka, registre de schémas, sujets commerciaux, DLQ et contrats d'événements.</p>
           </div>
           <div class="flow-column">
             <span>03</span>
-            <strong>Fonctionner</strong>
+            <strong>Exploiter</strong>
             <p>Kubernetes, DEALHost, observabilité, sécurité et SLOs.</p>
           </div>
           <div class="flow-column">
@@ -378,14 +443,14 @@
           <p class="eyebrow">Pourquoi adopter</p>
           <h2>La différence : une architecture auditable avant production.</h2>
           <p>
-            La suite DEAL ne vend pas uniquement un schéma. Il fournit des manifestes, des tests, des flux de travail, des runbooks, des preuves de sécurité et de la documentation qui réduisent les risques d'adoption.
+            La suite DEAL ne vend pas uniquement un schéma. Elle fournit des manifestes, des tests, des workflows, des runbooks, des preuves de sécurité et une documentation qui réduisent le risque d'adoption.
           </p>
         </div>
         <div class="proof-list reveal">
           <article>
-            <span>Essais</span>
-            <strong>Garde-corps CI/CD</strong>
-            <p>Unité, intégration, déploiement, Kustomize, Swarm et validation de la supply-chain.</p>
+            <span>Tests</span>
+            <strong>Garde-fous CI/CD</strong>
+            <p>Tests unitaires, intégration, déploiement, Kustomize, Swarm et validation de la chaîne de livraison.</p>
           </article>
           <article>
             <span>Évolutivité</span>
@@ -394,8 +459,8 @@
           </article>
           <article>
             <span>Confiance</span>
-            <strong>Compliance evidence</strong>
-            <p>Thèmes dédiés à la gouvernance, à la sécurité, à la résilience et aux obligations européennes.</p>
+            <strong>Preuves de conformité</strong>
+            <p>Sujets Kafka dédiés à la gouvernance, à la sécurité, à la résilience et aux obligations européennes.</p>
           </article>
         </div>
       </section>
@@ -506,8 +571,8 @@
           </p>
           <div class="launch-actions">
             <a class="button primary"
-               href="mailto:contact@smartappli.com?subject=Demo%20DEAL%20suite">Contacterez l'équipe</a>
-            <a class="button secondary" href="https://github.com/Smartappli/DEALIoT">Ouvrez le référentiel GitHub</a>
+               href="mailto:contact@smartappli.com?subject=Demo%20DEAL%20suite">Contacter l'équipe</a>
+            <a class="button secondary" href="#repositories">Voir les références GitHub</a>
           </div>
         </div>
       </section>

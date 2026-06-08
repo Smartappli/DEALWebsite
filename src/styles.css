@@ -587,6 +587,7 @@ h3 {
 }
 
 .products,
+.repositories,
 .architecture,
 .proof,
 .adoption,
@@ -617,6 +618,8 @@ h3 {
 
 .product-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 25rem;
   padding: clamp(1.1rem, 2vw, 1.55rem);
   overflow: hidden;
@@ -704,7 +707,8 @@ h3 {
 .product-card p,
 .product-card ul,
 .product-card h3,
-.product-index {
+.product-index,
+.product-link {
   position: relative;
   z-index: 1;
 }
@@ -725,6 +729,141 @@ h3 {
   content: "";
   background: var(--acid);
   border-radius: 50%;
+}
+
+.product-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  color: var(--acid);
+  font-size: 0.84rem;
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.22em;
+}
+
+.product-link::after {
+  margin-left: 0.45rem;
+  content: "->";
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.repo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 19rem;
+  padding: clamp(1.1rem, 2vw, 1.45rem);
+  overflow: hidden;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 86% 18%, rgb(1 150 208 / 14%), transparent 12rem),
+    rgb(255 255 255 / 88%);
+  border: 1px solid rgb(15 23 42 / 8%);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 56px rgb(15 23 42 / 9%);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.repo-card::before {
+  position: absolute;
+  inset: auto -4rem -5rem auto;
+  width: 12rem;
+  height: 12rem;
+  pointer-events: none;
+  content: "";
+  background: var(--acid);
+  border-radius: 50%;
+  filter: blur(24px);
+  opacity: 0.16;
+}
+
+.repo-card:hover,
+.repo-card:focus-visible {
+  border-color: rgb(1 150 208 / 28%);
+  box-shadow: 0 24px 72px rgb(1 150 208 / 17%);
+  transform: translateY(-4px);
+}
+
+.repo-card:focus-visible {
+  outline: 3px solid rgb(1 150 208 / 28%);
+  outline-offset: 3px;
+}
+
+.repo-card span,
+.repo-card strong,
+.repo-card p,
+.repo-card em {
+  position: relative;
+  z-index: 1;
+}
+
+.repo-card span,
+.repo-card em {
+  font: 800 0.74rem var(--font-mono);
+  letter-spacing: 0.08em;
+}
+
+.repo-card span {
+  color: var(--acid);
+  text-transform: uppercase;
+}
+
+.repo-card strong {
+  max-width: 10ch;
+  margin-top: 2.4rem;
+  font: 700 clamp(1.75rem, 3vw, 2.55rem)/0.95 var(--font-display);
+  letter-spacing: -0.055em;
+}
+
+.repo-card p {
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.repo-card em {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 1.2rem;
+  color: var(--slate);
+  font-style: normal;
+  word-break: break-word;
+  text-decoration: underline;
+  text-decoration-color: var(--acid);
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.22em;
+}
+
+.repo-host {
+  background:
+    radial-gradient(circle at 86% 18%, rgb(245 138 61 / 16%), transparent 12rem),
+    rgb(255 255 255 / 88%);
+}
+
+.repo-host::before {
+  background: var(--ember);
+}
+
+.repo-data {
+  background:
+    radial-gradient(circle at 86% 18%, rgb(20 184 197 / 16%), transparent 12rem),
+    linear-gradient(150deg, #ffffff, #edf7fb);
+}
+
+.repo-data::before {
+  background: var(--mint);
 }
 
 .architecture-board {
@@ -836,9 +975,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  align-items: stretch;
 }
 
 .adoption-card {
+  display: flex;
+  flex-direction: column;
   min-height: 21rem;
   padding: 1.2rem;
   color: var(--ink);
@@ -849,12 +991,10 @@ h3 {
 }
 
 .adoption-card:nth-child(2) {
-  margin-top: 1.25rem;
   background: linear-gradient(145deg, #f0fbff, var(--paper));
 }
 
 .adoption-card:nth-child(3) {
-  margin-top: 2.5rem;
   color: var(--ink);
   background: linear-gradient(145deg, #ffffff, #edf7fb);
 }
@@ -877,7 +1017,8 @@ h3 {
 
 .adoption-card a {
   display: inline-flex;
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
   color: inherit;
   font-weight: 900;
   text-decoration: underline;
@@ -1088,14 +1229,10 @@ h3 {
   }
 
   .product-grid,
+  .repo-grid,
   .adoption-grid,
   .architecture-board {
     grid-template-columns: 1fr;
-  }
-
-  .adoption-card:nth-child(2),
-  .adoption-card:nth-child(3) {
-    margin-top: 0;
   }
 
   .architecture-board::before {
@@ -1175,6 +1312,7 @@ h3 {
   }
 
   .product-card,
+  .repo-card,
   .adoption-card,
   .faq-item,
   .proof-panel,
