@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description"
-          content="DEAL jippreżenta DEALIoT, DEALHost u DEALData: pjattaforma tad-dejta tal-IoT lesta għall-produzzjoni, passaġġ ta’ hosting ġestit u saff ta’ governanza tad-dejta għal ekosistemi ta’ dejta fuq il-post skalabbli.">
+          content="DEAL presents DEALIoT, DEALHost, DEALData and DEALInterface: a production-ready IoT data platform, managed hosting path, data governance layer and unified management console for scalable field data ecosystems.">
     <meta name="keywords"
-          content="DEALIoT, DEALHost, DEALData, pjattaforma tad-dejta tal-IoT, Kafka, Flink, Kubernetes, governanza tad-dejta, hosting amministrat">
+          content="DEALIoT, DEALHost, DEALData, DEALInterface, IoT data platform, Kafka, Flink, Kubernetes, data governance, managed hosting, management console, IAM, RBAC, audit">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Smartappli">
     <meta name="application-name" content="DEAL suite">
@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style"
           content="black-translucent">
-    <title>DEAL | DEALIoT, DEALHost, DEALData</title>
+    <title>DEAL | DEALIoT, DEALHost, DEALData, DEALInterface</title>
     <link rel="canonical" href="https://smartappli.io/mt/">
     <link rel="alternate" hreflang="en-US" href="https://smartappli.io/">
     <link rel="alternate" hreflang="bg" href="https://smartappli.io/bg/">
@@ -49,9 +49,9 @@
     <meta property="og:locale" content="mt_MT">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:site_name" content="DEAL suite">
-    <meta property="og:title" content="DEAL | DEALIoT, DEALHost, DEALData">
+    <meta property="og:title" content="DEAL | DEALIoT, DEALHost, DEALData, DEALInterface">
     <meta property="og:description"
-          content="Suite ta' dejta tal-IoT professjonali għal inġestjoni f'ħin reali, infrastruttura operata u kondiviżjoni ta' dejta rregolata.">
+          content="A professional IoT data suite for real-time ingestion, operated infrastructure, governed data sharing and unified suite management.">
     <meta property="og:url" content="https://smartappli.io/mt/">
     <meta property="og:image"
           content="https://smartappli.io/assets/social-card.png">
@@ -59,11 +59,11 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt"
-          content="DEALIoT, DEALHost u DEALData għal ekosistemi ta' data IoT skalabbli.">
+          content="DEALIoT, DEALHost, DEALData and DEALInterface for scalable IoT data ecosystems.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DEAL | DEALIoT, DEALHost, DEALData">
+    <meta name="twitter:title" content="DEAL | DEALIoT, DEALHost, DEALData, DEALInterface">
     <meta name="twitter:description"
-          content="Inġestjoni tal-IoT f'ħin reali, prodotti ta' hosting operati u rregolati b'evidenza ta' konformità.">
+          content="Real-time IoT ingestion, operated hosting, governed data products and a unified management console with compliance evidence.">
     <meta name="twitter:image"
           content="https://smartappli.io/assets/social-card.png">
     <meta name="twitter:image:alt"
@@ -85,20 +85,20 @@
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../styles.css?v=20260607-render-blocking-v1"
+          href="../styles.css?v=20260609-dealinterface-v1"
           as="style"
           fetchpriority="high">
     <link rel="stylesheet"
-          href="../styles.css?v=20260607-render-blocking-v1"
+          href="../styles.css?v=20260609-dealinterface-v1"
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../app.js?v=20260607-render-blocking-v1"
+          href="../app.js?v=20260609-dealinterface-v1"
           as="script">
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap"
             rel="stylesheet">
-      <link rel="stylesheet" href="../styles.css?v=20260607-render-blocking-v1">
+      <link rel="stylesheet" href="../styles.css?v=20260609-dealinterface-v1">
     </noscript>
     <script type="application/ld+json">
         {
@@ -111,12 +111,13 @@
                 "sameAs": [
                     "https://github.com/Smartappli/DEALIoT",
                     "https://github.com/Smartappli/DEALHost",
-                    "https://github.com/Smartappli/DEALData"
+                    "https://github.com/Smartappli/DEALData",
+                    "https://github.com/Smartappli/DEALInterface"
                 ]
             }, {
                 "@id": "https://smartappli.io/#website",
                 "@type": "WebSite",
-                "description": "Websajt pubbliku għall-suite DEAL: DEALIoT, DEALHost u DEALData.",
+                "description": "Public website for the DEAL suite: DEALIoT, DEALHost, DEALData and DEALInterface.",
                 "inLanguage": "mt",
                 "name": "DEAL suite",
                 "publisher": {
@@ -124,11 +125,11 @@
                 },
                 "url": "https://smartappli.io/"
             }, {
-                "@id": "https://smartappli.io/#dealiot",
+                "@id": "https://smartappli.io/mt/#dealiot",
                 "@type": "SoftwareApplication",
-                "applicationCategory": "Pjattaforma tad-dejta tal-IoT",
+                "applicationCategory": "IoT data platform",
                 "codeRepository": "https://github.com/Smartappli/DEALIoT",
-                "description": "DEALIoT jinġerixxi telemetrija IoT u metadejta tal-midja permezz ta' MQTT, Kafka, Apicurio, Flink, Beam, Airflow, Prometheus u Prometheus u Grafana",
+                "description": "DEALIoT ingests IoT telemetry and media metadata through MQTT, Kafka, Apicurio, Flink, Beam, Airflow, Prometheus and Grafana.",
                 "isPartOf": {
                     "@id": "https://smartappli.io/#suite"
                 },
@@ -136,11 +137,11 @@
                 "name": "DEALIoT",
                 "operatingSystem": "Linux, Docker, Kubernetes",
                 "sameAs": "https://github.com/Smartappli/DEALIoT",
-                "url": "https://smartappli.io/#products"
+                "url": "https://smartappli.io/mt/#products"
             }, {
-                "@id": "https://smartappli.io/#dealhost",
+                "@id": "https://smartappli.io/mt/#dealhost",
                 "@type": "Service",
-                "description": "DEALHost hija l-mogħdija ta' hosting operata għal DEAL tagħbija tax-xogħol fuq infrastruttura mwebbsa, ibrida jew on-prem.",
+                "description": "DEALHost is the operated hosting path for DEAL workloads on hardened cloud, hybrid or on-prem infrastructure.",
                 "isPartOf": {
                     "@id": "https://smartappli.io/#suite"
                 },
@@ -149,12 +150,12 @@
                     "@id": "https://smartappli.io/#organization"
                 },
                 "sameAs": "https://github.com/Smartappli/DEALHost",
-                "serviceType": "Hosting ta' pjattaforma tad-dejta ġestita",
-                "url": "https://smartappli.io/#products"
+                "serviceType": "Managed data platform hosting",
+                "url": "https://smartappli.io/mt/#products"
             }, {
-                "@id": "https://smartappli.io/#dealdata",
+                "@id": "https://smartappli.io/mt/#dealdata",
                 "@type": "Service",
-                "description": "DEALData katalgi ta' strutturi, qsim ikkontrollat, esportazzjonijiet, Data Act evidenza, DGA workflows, FAIR pubblikazzjoni, Zenodo u OpenAIRE.",
+                "description": "DEALData structures catalogues, controlled sharing, exports, Data Act evidence, DGA workflows, FAIR publication, Zenodo and OpenAIRE.",
                 "isPartOf": {
                     "@id": "https://smartappli.io/#suite"
                 },
@@ -163,42 +164,63 @@
                     "@id": "https://smartappli.io/#organization"
                 },
                 "sameAs": "https://github.com/Smartappli/DEALData",
-                "serviceType": "Il-governanza u l-kondiviżjoni tad-dejta",
-                "url": "https://smartappli.io/#products"
+                "serviceType": "Data governance and sharing",
+                "url": "https://smartappli.io/mt/#products"
+            }, {
+                "@id": "https://smartappli.io/mt/#dealinterface",
+                "@type": "SoftwareApplication",
+                "applicationCategory": "BusinessApplication",
+                "codeRepository": "https://github.com/Smartappli/DEALInterface",
+                "description": "DEALInterface is the unified management console for the DEAL suite, centralizing IAM, RBAC, audit, billing, support and operator workflows.",
+                "isPartOf": {
+                    "@id": "https://smartappli.io/#suite"
+                },
+                "license": "https://github.com/Smartappli/DEALInterface/blob/main/LICENSE",
+                "name": "DEALInterface",
+                "operatingSystem": "Web",
+                "sameAs": "https://github.com/Smartappli/DEALInterface",
+                "url": "https://smartappli.io/mt/#products"
             }, {
                 "@id": "https://smartappli.io/#suite",
                 "@type": "Product",
                 "brand": {
                     "@id": "https://smartappli.io/#organization"
                 },
-                "category": "Pjattaforma tad-dejta tal-IoT",
-                "description": "DEAL suite tgħaqqad l-inġestjoni tal-IoT, l-hosting operat u l-prodotti tad-dejta rregolati.",
+                "category": "IoT data platform",
+                "description": "DEAL suite combines IoT ingestion, operated hosting, governed data products and a unified management console.",
                 "name": "DEAL suite",
                 "url": "https://smartappli.io/"
             }, {
-                "@id": "https://smartappli.io/#faq",
+                "@id": "https://smartappli.io/mt/#faq",
                 "@type": "FAQPage",
                 "mainEntity": [{
                     "@type": "Question",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DEALIoT is a production-oriented Pjattaforma tad-dejta tal-IoT for MQTT ingestion, Kafka transport, schema governance, stream processing and operational evidence."
+                        "text": "DEALIoT is a production-oriented IoT data platform for MQTT ingestion, Kafka transport, schema governance, stream processing and operational evidence."
                     },
-                    "name": "X'inhu DEALIoT?"
+                    "name": "What is DEALIoT?"
                 }, {
                     "@type": "Question",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DEALHost hija l-mogħdija tal-hosting u tal-operazzjonijiet għat-tmexxija ta' DEAL workloads fuq Kubernetes, infrastruttura cloud, ibrida jew on-prem."
+                        "text": "DEALHost is the hosting and operations path for running DEAL workloads on Kubernetes, cloud, hybrid or on-prem infrastructure."
                     },
-                    "name": "X'inhu DEALHost?"
+                    "name": "What is DEALHost?"
                 }, {
                     "@type": "Question",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DEALData huwa s-saff ta' governanza għal katalgi, qsim ikkontrollat, esportazzjonijiet u Data Act, DGA u FAIR evidenza."
+                        "text": "DEALData is the governance layer for catalogues, controlled sharing, exports and Data Act, DGA and FAIR evidence."
                     },
-                    "name": "X'inhu DEALData?"
+                    "name": "What is DEALData?"
+                }, {
+                    "@type": "Question",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DEALInterface is the unified management console for the DEAL suite, keeping module operations isolated while centralizing IAM, RBAC, audit, billing, support and operator workflows."
+                    },
+                    "name": "What is DEALInterface?"
                 }]
             }]
         }
@@ -260,21 +282,19 @@
     <main id="main">
       <section id="top" class="hero section-shell">
         <div class="hero-copy reveal">
-          <p class="eyebrow">DEALIoT + DEALHost + DEALData</p>
+          <p class="eyebrow">DEALIoT + DEALHost + DEALData + DEALInterface</p>
           <h1>Opera d-dejta tal-post bħal sistema ta 'produzzjoni.</h1>
           <p class="hero-lede">
-            DEAL jġib flimkien DEALIoT, DEALHost u DEALData għal telemetrija IoT, infrastruttura operata u kondiviżjoni ta' data rregolata.
-          </p>
+            DEAL brings DEALIoT, DEALHost, DEALData and DEALInterface together for IoT telemetry, operated infrastructure, governed data sharing and unified suite management.</p>
           <div class="hero-actions">
             <a class="button primary" href="#products">Esplora l-pakkett</a>
             <a class="button secondary" href="#architecture">Ara l-pjattaforma</a>
           </div>
           <dl class="hero-metrics" aria-label="Pjattaforma wegħdiet">
             <div>
-              <dt>3</dt>
+              <dt>4</dt>
               <dd>
-                prodotti koordinati
-              </dd>
+                coordinated components</dd>
             </div>
             <div>
               <dt>24/7</dt>
@@ -298,17 +318,19 @@
           <div class="orbit-node node-iot">DEALIoT</div>
           <div class="orbit-node node-host">DEALHost</div>
           <div class="orbit-node node-data">DEALData</div>
+          <div class="orbit-node node-interface">DEALInterface</div>
           <div class="signal-line line-a" aria-hidden="true"></div>
           <div class="signal-line line-b" aria-hidden="true"></div>
           <div class="signal-line line-c" aria-hidden="true"></div>
+          <div class="signal-line line-d" aria-hidden="true"></div>
         </div>
       </section>
       <section id="products" class="products section-shell">
         <div class="section-heading reveal">
-          <p class="eyebrow">Pakkett wieħed, tliet mogħdijiet ta’ adozzjoni</p>
-          <h2>Ibni, tospita u tmexxi.</h2>
+          <p class="eyebrow">One suite, four adoption paths</p>
+          <h2>Build, host, govern and operate.</h2>
           <p>
-            Kull prodott jista 'jiġi adottat b'mod indipendenti. Flimkien, ikopru ċ-ċiklu sħiħ mill-inġestjoni fil-post sa infrastruttura operata, governanza u kondiviżjoni kkontrollata tad-dejta.
+            Each component can be adopted independently. Together, they cover the full cycle from field ingestion to operated infrastructure, governance, controlled data sharing and operator coordination.
           </p>
         </div>
         <div class="product-grid">
@@ -348,6 +370,81 @@
               <li>Evidenza ta' konformità li tista' tintuża</li>
             </ul>
           </article>
+          <article class="product-card card-interface reveal">
+            <span class="product-index">04</span>
+            <h3>DEALInterface</h3>
+            <p>
+              Unified management console for the DEAL suite. Product modules stay isolated while IAM, RBAC, audit, billing, support and operator workflows are centralized.
+            </p>
+            <ul>
+              <li>Single control plane</li>
+              <li>IAM, RBAC and audit surfaces</li>
+              <li>Operator workflows and live probes</li>
+            </ul>
+            <a class="product-link"
+               href="https://github.com/Smartappli/DEALInterface"
+               target="_blank"
+               rel="noopener noreferrer">View DEALInterface on GitHub</a>
+          </article>
+        </div>
+      </section>
+      <section id="repositories" class="repositories section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Public GitHub references</p>
+          <h2>Four components, four source references.</h2>
+          <p>
+            The suite is easier to evaluate when the public repositories are explicit. Use these links to inspect scope, documentation and project maturity component by component.
+          </p>
+        </div>
+        <div class="repo-grid">
+          <a class="repo-card repo-iot reveal"
+             href="https://github.com/Smartappli/DEALIoT"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open the DEALIoT GitHub repository">
+            <span>01 / DEALIoT</span>
+            <strong>Real-time IoT platform</strong>
+            <p>
+              MQTT ingestion, Kafka transport, Flink/Beam processing, Airflow orchestration, observability and compliance evidence.
+            </p>
+            <em>github.com/Smartappli/DEALIoT</em>
+          </a>
+          <a class="repo-card repo-host reveal"
+             href="https://github.com/Smartappli/DEALHost"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open the DEALHost GitHub repository">
+            <span>02 / DEALHost</span>
+            <strong>Hosting and operations</strong>
+            <p>
+              Modular hosting assets for operating DEAL workloads with deployment boundaries, infrastructure choices and support routines.
+            </p>
+            <em>github.com/Smartappli/DEALHost</em>
+          </a>
+          <a class="repo-card repo-data reveal"
+             href="https://github.com/Smartappli/DEALData"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open the DEALData GitHub repository">
+            <span>03 / DEALData</span>
+            <strong>Governed data services</strong>
+            <p>
+              Data services for telemetry, WildFi ingestion, catalogues, controlled sharing and governed data workflows.
+            </p>
+            <em>github.com/Smartappli/DEALData</em>
+          </a>
+          <a class="repo-card repo-interface reveal"
+             href="https://github.com/Smartappli/DEALInterface"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open the DEALInterface GitHub repository">
+            <span>04 / DEALInterface</span>
+            <strong>Unified management console</strong>
+            <p>
+              React and TypeScript control plane for module navigation, IAM-ready workflows, live connection probes and operator coordination.
+            </p>
+            <em>github.com/Smartappli/DEALInterface</em>
+          </a>
         </div>
       </section>
       <section id="architecture" class="architecture section-shell">
@@ -375,6 +472,11 @@
             <span>04</span>
             <strong>Valur</strong>
             <p>DEALData, katalgi, esportazzjonijiet, evidenza ta' konformità u kondiviżjoni kkontrollata.</p>
+          </div>
+          <div class="flow-column">
+            <span>05</span>
+            <strong>Control</strong>
+            <p>DEALInterface centralizes IAM, RBAC, audit, support, billing and operator workflows.</p>
           </div>
         </div>
       </section>
@@ -460,8 +562,7 @@
           <p class="eyebrow">Tweġibiet diretti</p>
           <h2>Tweġibiet qosra għal evalwazzjoni rapida.</h2>
           <p>
-            Din it-taqsima tagħti lil dawk li jieħdu d-deċiżjonijiet, lill-integraturi u lill-magni tat-tweġibiet id-definizzjonijiet kanoniċi ta’ DEALIoT, DEALHost u DEALData.
-          </p>
+            This section gives decision-makers, integrators and answer engines the canonical definitions of DEALIoT, DEALHost, DEALData and DEALInterface.</p>
         </div>
         <div class="faq-grid">
           <article class="faq-item reveal">
@@ -480,6 +581,12 @@
             <h3>X'inhu DEALData?</h3>
             <p>
               DEALData strutturi katalgi, prodotti tad-dejta, qsim ikkontrollat, FAIR esportazzjonijiet, Zenodo, OpenAIRE u Data Act jew Data Governance Act evidenza.
+            </p>
+          </article>
+          <article class="faq-item reveal">
+            <h3>What is DEALInterface?</h3>
+            <p>
+              DEALInterface is the unified management console for the DEAL suite: it centralizes IAM, RBAC, audit, billing, support and operator workflows while preserving module boundaries.
             </p>
           </article>
           <article class="faq-item reveal">
@@ -521,6 +628,6 @@
       <span>DEAL ekosistema</span>
       <span><a href="https://smartappli.io/" hreflang="en-US" lang="en-US">English</a> / <a href="https://smartappli.io/llms.txt">Kuntest LLMS</a></span>
     </footer>
-    <script src="../app.js?v=20260607-render-blocking-v1" defer></script>
+    <script src="../app.js?v=20260609-dealinterface-v1" defer></script>
   </body>
 </html>
