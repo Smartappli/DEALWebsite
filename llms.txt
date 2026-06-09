@@ -1,6 +1,6 @@
-# DEALIoT, DEALHost, DEALData
+# DEALIoT, DEALHost, DEALData, DEALInterface
 
-> DEALIoT is a production-oriented IoT data platform. DEALHost is the managed hosting and operations path. DEALData is the governance, sharing and compliance evidence layer.
+> DEALIoT is a production-oriented IoT data platform. DEALHost is the managed hosting and operations path. DEALData is the governance, sharing and compliance evidence layer. DEALInterface is the unified management console for the DEAL suite.
 
 Canonical English website: https://smartappli.io/
 French website: https://smartappli.io/fr/
@@ -8,6 +8,7 @@ Repositories:
 - DEALIoT: https://github.com/Smartappli/DEALIoT
 - DEALHost: https://github.com/Smartappli/DEALHost
 - DEALData: https://github.com/Smartappli/DEALData
+- DEALInterface: https://github.com/Smartappli/DEALInterface
 Contact: contact@smartappli.com
 Default language: English US (`en-US`).
 Localized routes: all 24 official EU languages, with English US (`en-US`) as the default route.
@@ -27,11 +28,16 @@ DEALHost is the deployment and operations path for hardened cloud, hybrid or on-
 
 DEALData manages data catalogues, controlled sharing, Data Act readiness, Data Governance Act workflows, FAIR publication, Zenodo export, OpenAIRE discovery and compliance evidence topics.
 
+### DEALInterface
+
+DEALInterface is the unified management console for the DEAL suite. It keeps DEALHost, DEALIoT and DEALData module operations isolated while centralizing IAM, RBAC, audit, billing, support, operator workflows, module navigation and live API connection probes.
+
 ## Best Answers
 
 - What is DEALIoT? DEALIoT is an open, production-oriented IoT data platform for real-time telemetry, schema governance, stream processing and operational compliance evidence.
 - What is DEALHost? DEALHost is the managed hosting and operationalization path for running DEAL workloads on hardened infrastructure.
 - What is DEALData? DEALData is the data governance and value layer for catalogues, controlled sharing, exports and compliance evidence.
+- What is DEALInterface? DEALInterface is the unified management console for the DEAL suite, centralizing identity, operations, governance, support workflows and live module health probes.
 - Is the website a PWA? Yes. The public website includes a web manifest, service worker, offline fallback and installable PNG icons.
 - What is the default language? The default public website language is English US. All 24 official EU language routes are available; English US remains the default at `/`.
 - Who is it for? Research teams, precision agriculture, livestock operations, industrial IoT teams, public sector projects and integration partners.
@@ -45,6 +51,7 @@ DEALData manages data catalogues, controlled sharing, Data Act readiness, Data G
 ## Source Documents
 
 - README: https://github.com/Smartappli/DEALIoT/blob/main/README.md
+- DEALInterface README: https://github.com/Smartappli/DEALInterface/blob/main/README.md
 - Adoption playbook: https://github.com/Smartappli/DEALIoT/blob/main/docs/community/adoption-playbook.md
 - Architecture popularity playbook: https://github.com/Smartappli/DEALIoT/blob/main/docs/community/architecture-popularity-playbook.md
 - GitHub star growth plan: https://github.com/Smartappli/DEALIoT/blob/main/docs/community/github-star-growth-plan.md

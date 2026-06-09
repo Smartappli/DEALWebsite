@@ -556,6 +556,11 @@ h3 {
   bottom: 16%;
 }
 
+.node-interface {
+  bottom: 18%;
+  left: 8%;
+}
+
 .signal-line {
   position: absolute;
   z-index: 1;
@@ -586,6 +591,13 @@ h3 {
   transform: rotate(34deg);
 }
 
+.line-d {
+  top: 50%;
+  left: 22%;
+  width: 38%;
+  transform: rotate(-22deg);
+}
+
 .products,
 .repositories,
 .architecture,
@@ -611,7 +623,7 @@ h3 {
 
 .product-grid {
   display: grid;
-  grid-template-columns: 1.12fr 0.92fr 0.92fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   align-items: stretch;
 }
@@ -669,6 +681,13 @@ h3 {
     linear-gradient(150deg, #ffffff, #edf7fb);
 }
 
+.card-interface {
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 82% 82%, rgb(255 93 115 / 13%), transparent 13rem),
+    linear-gradient(150deg, #ffffff, #fff3f5);
+}
+
 .card-iot::before {
   background: var(--mint);
 }
@@ -681,6 +700,10 @@ h3 {
   background: var(--cyan);
 }
 
+.card-interface::before {
+  background: var(--rose);
+}
+
 .product-index {
   display: inline-flex;
   margin-bottom: clamp(2.8rem, 5vw, 4.5rem);
@@ -691,7 +714,9 @@ h3 {
 .card-host p,
 .card-host li,
 .card-data p,
-.card-data li {
+.card-data li,
+.card-interface p,
+.card-interface li {
   color: var(--muted);
 }
 
@@ -755,7 +780,7 @@ h3 {
 
 .repo-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -866,10 +891,20 @@ h3 {
   background: var(--mint);
 }
 
+.repo-interface {
+  background:
+    radial-gradient(circle at 86% 18%, rgb(255 93 115 / 14%), transparent 12rem),
+    linear-gradient(150deg, #ffffff, #fff3f5);
+}
+
+.repo-interface::before {
+  background: var(--rose);
+}
+
 .architecture-board {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1px;
   overflow: hidden;
   background: rgb(15 23 42 / 8%);

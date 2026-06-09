@@ -1,12 +1,13 @@
 # DEAL public website
 
-Static Progressive Web App for presenting DEALIoT, DEALHost and DEALData.
+Static Progressive Web App for presenting DEALIoT, DEALHost, DEALData and DEALInterface.
 
 ## Public Repositories
 
 - DEALIoT: https://github.com/Smartappli/DEALIoT
 - DEALHost: https://github.com/Smartappli/DEALHost
 - DEALData: https://github.com/Smartappli/DEALData
+- DEALInterface: https://github.com/Smartappli/DEALInterface
 
 ## Local preview
 

@@ -3,6 +3,7 @@ Repositories:
 DEALIoT: https://github.com/Smartappli/DEALIoT
 DEALHost: https://github.com/Smartappli/DEALHost
 DEALData: https://github.com/Smartappli/DEALData
+DEALInterface: https://github.com/Smartappli/DEALInterface
 Maintainer organization: Smartappli
 Contact: contact@smartappli.com
 Default language: en-US

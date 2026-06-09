@@ -1,7 +1,7 @@
 {
   "name": "DEAL suite",
   "short_name": "DEAL",
-  "description": "DEALIoT, DEALHost and DEALData: IoT data platform, managed hosting and data governance suite.",
+  "description": "DEALIoT, DEALHost, DEALData and DEALInterface: IoT data platform, managed hosting, data governance and unified management suite.",
   "lang": "en-US",
   "dir": "ltr",
   "id": "/",
