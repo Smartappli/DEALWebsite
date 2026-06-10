@@ -1419,3 +1419,9 @@ h3 {
     padding-inline: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .star-link {
+    display: none;
+  }
+}
