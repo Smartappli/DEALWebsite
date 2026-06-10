@@ -1,5 +1,5 @@
-const CACHE_NAME = "dealiot-pwa-v7-dealinterface";
-const ASSET_VERSION = "20260609-dealinterface-v1";
+const CACHE_NAME = "dealiot-pwa-v8-header";
+const ASSET_VERSION = "20260610-header-v1";
 const ROUTE_ASSETS = [
   "./",
   "./fr/",
