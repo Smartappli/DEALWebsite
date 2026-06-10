@@ -1421,6 +1421,25 @@ h3 {
 }
 
 @media (max-width: 480px) {
+  .site-header {
+    grid-template-columns: 1fr;
+  }
+
+  .header-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    justify-self: stretch;
+    width: 100%;
+  }
+
+  .language-menu {
+    width: min(10rem, 100%);
+  }
+
+  .language-select {
+    width: 100%;
+  }
+
   .star-link {
     display: none;
   }
