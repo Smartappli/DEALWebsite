@@ -85,20 +85,20 @@
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../styles.css?v=20260610-header-v2"
+          href="../styles.css?v=20260711-community-v1"
           as="style"
           fetchpriority="high">
     <link rel="stylesheet"
-          href="../styles.css?v=20260610-header-v2"
+          href="../styles.css?v=20260711-community-v1"
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../app.js?v=20260610-header-v2"
+          href="../app.js?v=20260711-community-v1"
           as="script">
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap"
             rel="stylesheet">
-      <link rel="stylesheet" href="../styles.css?v=20260610-header-v2">
+      <link rel="stylesheet" href="../styles.css?v=20260711-community-v1">
     </noscript>
     <script type="application/ld+json">
         {
@@ -237,10 +237,10 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Esmane navigeerimine">
+        <a href="#community">Kogukond</a>
         <a href="#products">Tooted</a>
         <a href="#architecture">Platvorm</a>
         <a href="#proof">Tõestus</a>
-        <a href="#adoption">Kasutuselevõtt</a>
         <a href="#faq">KKK</a>
         <a href="#contact">Võtke ühendust</a>
       </nav>
@@ -285,8 +285,11 @@
           <p class="hero-lede">
             DEAL brings DEALIoT, DEALHost, DEALData and DEALInterface together for IoT telemetry, operated infrastructure, governed data sharing and unified suite management.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#products">Tutvuge paketiga</a>
-            <a class="button secondary" href="#architecture">Vaata platvormi</a>
+            <a class="button primary"
+               href="https://github.com/Smartappli/DEALIoT/discussions"
+               target="_blank"
+               rel="noopener noreferrer"><span class="button-spark" aria-hidden="true">&#10022;</span>Liitu kogukonnaga</a>
+            <a class="button secondary" href="#products">Tutvuge paketiga</a>
           </div>
           <dl class="hero-metrics" aria-label="Platvormi lubadused">
             <div>
@@ -321,6 +324,57 @@
           <div class="signal-line line-b" aria-hidden="true"></div>
           <div class="signal-line line-c" aria-hidden="true"></div>
           <div class="signal-line line-d" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section id="community" class="community section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Kogukond</p>
+          <h2>Avalik tee hindamiseks ilma hõõrdumiseta.</h2>
+          <p>
+            Komplektis DEAL on selge tee: testige kohapeal, viige läbi 30-päevane piloot, dokumenteerige integratsioonid ja panustage tootmispiirdeid purustamata.
+          </p>
+        </div>
+        <div class="adoption-grid">
+          <article class="adoption-card reveal">
+            <span>Hinda</span>
+            <h3>Reprodutseeritav demo</h3>
+            <p>
+              Käivitage suitsutest, valige üks välivoog, mõõtke esimest kasutatavat sündmust ja jäädvustage otsuse tõendid.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/demo-pilot-playbook.md">Lugege pilootraamatut</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Panustada</span>
+            <h3>Struktureeritud kogukond</h3>
+            <p>
+              Arutelud, tagasiside vormid, tugireeglid, kogukonna rituaalid ja tegevuskavade triaaž muudavad kasutajate vastuvõtmise loetavaks ja hooldatavaks.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/discussions" target="_blank" rel="noopener noreferrer">Liitu kogukonnaga</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Integreerida</span>
+            <h3>Partnerid ja kasutusjuhud</h3>
+            <p>
+              Konkreetsed kariloomade, teadusuuringute, põllumajanduse, tööstuse, avaldamise ja partnerite stsenaariumid muudavad sobivuse kinnitamise lihtsamaks.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/use-case-catalog.md">Kasutusjuhtude kataloog</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Otsustage</span>
+            <h3>Tšempioni otsustuskomplekt</h3>
+            <p>
+              Võrdlus, kiire hindamine ja sisemised meistermaterjalid aitavad meeskondadel muuta huvi mõõdetud vastuvõtmisotsuseks.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/internal-champion-kit.md">Avage otsustuskomplekt</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Arenda</span>
+            <h3>Kaastöötajate kogukond</h3>
+            <p>
+              Panustamise rajad, mentorluse sildid, juhtimisreeglid ja abiarutelud muudavad arendusse panustamise lihtsamaks.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/contributor-onboarding.md">Alusta panustamist</a>
+          </article>
         </div>
       </section>
       <section id="products" class="products section-shell">
@@ -504,57 +558,6 @@
           </article>
         </div>
       </section>
-      <section id="adoption" class="adoption section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Kasutuselevõtu tee</p>
-          <h2>Avalik tee hindamiseks ilma hõõrdumiseta.</h2>
-          <p>
-            Komplektis DEAL on selge tee: testige kohapeal, viige läbi 30-päevane piloot, dokumenteerige integratsioonid ja panustage tootmispiirdeid purustamata.
-          </p>
-        </div>
-        <div class="adoption-grid">
-          <article class="adoption-card reveal">
-            <span>Hinda</span>
-            <h3>Reprodutseeritav demo</h3>
-            <p>
-              Käivitage suitsutest, valige üks välivoog, mõõtke esimest kasutatavat sündmust ja jäädvustage otsuse tõendid.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/demo-pilot-playbook.md">Lugege pilootraamatut</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Panustada</span>
-            <h3>Struktureeritud kogukond</h3>
-            <p>
-              Arutelud, tagasiside vormid, tugireeglid, kogukonna rituaalid ja tegevuskavade triaaž muudavad kasutajate vastuvõtmise loetavaks ja hooldatavaks.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/user-community-launch-plan.md">kogukonna plaan</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Integreerida</span>
-            <h3>Partnerid ja kasutusjuhud</h3>
-            <p>
-              Konkreetsed kariloomade, teadusuuringute, põllumajanduse, tööstuse, avaldamise ja partnerite stsenaariumid muudavad sobivuse kinnitamise lihtsamaks.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/use-case-catalog.md">Kasutusjuhtude kataloog</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Otsustage</span>
-            <h3>Tšempioni otsustuskomplekt</h3>
-            <p>
-              Võrdlus, kiire hindamine ja sisemised meistermaterjalid aitavad meeskondadel muuta huvi mõõdetud vastuvõtmisotsuseks.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/internal-champion-kit.md">Avage otsustuskomplekt</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Arenda</span>
-            <h3>Kaastöötajate kogukond</h3>
-            <p>
-              Panustamise rajad, mentorluse sildid, juhtimisreeglid ja abiarutelud muudavad arendusse panustamise lihtsamaks.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/contributor-onboarding.md">Alusta panustamist</a>
-          </article>
-        </div>
-      </section>
       <section id="faq" class="faq section-shell">
         <div class="section-heading reveal">
           <p class="eyebrow">Otsesed vastused</p>
@@ -626,6 +629,6 @@
       <span>DEAL ökosüsteem</span>
       <span><a href="https://smartappli.io/" hreflang="en-US" lang="en-US">English</a> / <a href="https://smartappli.io/llms.txt">LLMS kontekst</a></span>
     </footer>
-    <script src="../app.js?v=20260610-header-v2" defer></script>
+    <script src="../app.js?v=20260711-community-v1" defer></script>
   </body>
 </html>

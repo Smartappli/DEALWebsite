@@ -85,20 +85,20 @@
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../styles.css?v=20260610-header-v2"
+          href="../styles.css?v=20260711-community-v1"
           as="style"
           fetchpriority="high">
     <link rel="stylesheet"
-          href="../styles.css?v=20260610-header-v2"
+          href="../styles.css?v=20260711-community-v1"
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../app.js?v=20260610-header-v2"
+          href="../app.js?v=20260711-community-v1"
           as="script">
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap"
             rel="stylesheet">
-      <link rel="stylesheet" href="../styles.css?v=20260610-header-v2">
+      <link rel="stylesheet" href="../styles.css?v=20260711-community-v1">
     </noscript>
     <script type="application/ld+json">
         {
@@ -237,10 +237,10 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Primarna navigacija">
+        <a href="#community">Zajednica</a>
         <a href="#products">Proizvodi</a>
         <a href="#architecture">Platforma</a>
         <a href="#proof">Dokaz</a>
-        <a href="#adoption">Usvajanje</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">kontakt</a>
       </nav>
@@ -287,8 +287,11 @@
           <p class="hero-lede">
             DEAL brings DEALIoT, DEALHost, DEALData and DEALInterface together for IoT telemetry, operated infrastructure, governed data sharing and unified suite management.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#products">Istražite paket</a>
-            <a class="button secondary" href="#architecture">Pogledajte platformu</a>
+            <a class="button primary"
+               href="https://github.com/Smartappli/DEALIoT/discussions"
+               target="_blank"
+               rel="noopener noreferrer"><span class="button-spark" aria-hidden="true">&#10022;</span>Pridružite se zajednici</a>
+            <a class="button secondary" href="#products">Istražite paket</a>
           </div>
           <dl class="hero-metrics" aria-label="Platformaa obećava">
             <div>
@@ -323,6 +326,57 @@
           <div class="signal-line line-b" aria-hidden="true"></div>
           <div class="signal-line line-c" aria-hidden="true"></div>
           <div class="signal-line line-d" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section id="community" class="community section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Zajednica</p>
+          <h2>Javni put za procjenu bez trvenja.</h2>
+          <p>
+            Paket DEAL otkriva jasan put: testirajte lokalno, obuhvatite 30-dnevni pilot, dokumentirajte integracije i doprinosite bez rušenja proizvodnih zaštitnih ograda.
+          </p>
+        </div>
+        <div class="adoption-grid">
+          <article class="adoption-card reveal">
+            <span>Ocijenite</span>
+            <h3>Ponovljiva demonstracija</h3>
+            <p>
+              Pokrenite test dima, odaberite jedan terenski tok, izmjerite prvi upotrebljivi događaj i uhvatite dokaz odluke.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/demo-pilot-playbook.md">Pročitajte priručnik pilota</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Doprinesite</span>
+            <h3>Strukturirana zajednica</h3>
+            <p>
+              Rasprave, obrasci za povratne informacije, pravila podrške, rituali zajednice i trijaža putokaza čine prihvaćanje korisnika čitljivim i održivim.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/discussions" target="_blank" rel="noopener noreferrer">Pridružite se zajednici</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Integrirati</span>
+            <h3>Partneri i slučajevi korištenja</h3>
+            <p>
+              Konkretni scenariji za stoku, istraživanje, poljoprivredu, industriju, publikacije i partneri olakšavaju provjeru usklađenosti.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/use-case-catalog.md">Katalog slučajeva uporabe</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>odlučiti</span>
+            <h3>Komplet odluke prvaka</h3>
+            <p>
+              Usporedba, brza procjena i interni pobjednički materijali pomažu timovima pretvoriti interes u odmjerenu odluku o usvajanju.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/internal-champion-kit.md">Otvorite paket za odlučivanje</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Razvijajte</span>
+            <h3>Zajednica doprinositelja</h3>
+            <p>
+              Staze doprinosa, mentorske oznake, pravila upravljanja i rasprave za pomoć olakšavaju uključivanje u razvoj.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/contributor-onboarding.md">Počnite doprinositi</a>
+          </article>
         </div>
       </section>
       <section id="products" class="products section-shell">
@@ -506,57 +560,6 @@
           </article>
         </div>
       </section>
-      <section id="adoption" class="adoption section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Put usvajanja</p>
-          <h2>Javni put za procjenu bez trvenja.</h2>
-          <p>
-            Paket DEAL otkriva jasan put: testirajte lokalno, obuhvatite 30-dnevni pilot, dokumentirajte integracije i doprinosite bez rušenja proizvodnih zaštitnih ograda.
-          </p>
-        </div>
-        <div class="adoption-grid">
-          <article class="adoption-card reveal">
-            <span>Ocijenite</span>
-            <h3>Ponovljiva demonstracija</h3>
-            <p>
-              Pokrenite test dima, odaberite jedan terenski tok, izmjerite prvi upotrebljivi događaj i uhvatite dokaz odluke.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/demo-pilot-playbook.md">Pročitajte priručnik pilota</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Doprinesite</span>
-            <h3>Strukturirana zajednica</h3>
-            <p>
-              Rasprave, obrasci za povratne informacije, pravila podrške, rituali zajednice i trijaža putokaza čine prihvaćanje korisnika čitljivim i održivim.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/user-community-launch-plan.md">Plan zajednice</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Integrirati</span>
-            <h3>Partneri i slučajevi korištenja</h3>
-            <p>
-              Konkretni scenariji za stoku, istraživanje, poljoprivredu, industriju, publikacije i partneri olakšavaju provjeru usklađenosti.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/use-case-catalog.md">Katalog slučajeva uporabe</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>odlučiti</span>
-            <h3>Komplet odluke prvaka</h3>
-            <p>
-              Usporedba, brza procjena i interni pobjednički materijali pomažu timovima pretvoriti interes u odmjerenu odluku o usvajanju.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/internal-champion-kit.md">Otvorite paket za odlučivanje</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Razvijajte</span>
-            <h3>Zajednica doprinositelja</h3>
-            <p>
-              Staze doprinosa, mentorske oznake, pravila upravljanja i rasprave za pomoć olakšavaju uključivanje u razvoj.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/contributor-onboarding.md">Počnite doprinositi</a>
-          </article>
-        </div>
-      </section>
       <section id="faq" class="faq section-shell">
         <div class="section-heading reveal">
           <p class="eyebrow">Izravni odgovori</p>
@@ -628,6 +631,6 @@
       <span>DEAL ekosustav</span>
       <span><a href="https://smartappli.io/" hreflang="en-US" lang="en-US">English</a> / <a href="https://smartappli.io/llms.txt">LLMS kontekst</a></span>
     </footer>
-    <script src="../app.js?v=20260610-header-v2" defer></script>
+    <script src="../app.js?v=20260711-community-v1" defer></script>
   </body>
 </html>

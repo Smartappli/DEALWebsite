@@ -85,20 +85,20 @@
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../styles.css?v=20260610-header-v2"
+          href="../styles.css?v=20260711-community-v1"
           as="style"
           fetchpriority="high">
     <link rel="stylesheet"
-          href="../styles.css?v=20260610-header-v2"
+          href="../styles.css?v=20260711-community-v1"
           media="print"
           data-deferred-stylesheet>
     <link rel="preload"
-          href="../app.js?v=20260610-header-v2"
+          href="../app.js?v=20260711-community-v1"
           as="script">
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap"
             rel="stylesheet">
-      <link rel="stylesheet" href="../styles.css?v=20260610-header-v2">
+      <link rel="stylesheet" href="../styles.css?v=20260711-community-v1">
     </noscript>
     <script type="application/ld+json">
         {
@@ -237,10 +237,10 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Navegação primária">
+        <a href="#community">Comunidade</a>
         <a href="#products">Produtos</a>
         <a href="#architecture">Plataforma</a>
         <a href="#proof">Prova</a>
-        <a href="#adoption">Adoção</a>
         <a href="#faq">Perguntas frequentes</a>
         <a href="#contact">Contato</a>
       </nav>
@@ -288,8 +288,11 @@
             DEAL reúne DEALIoT, DEALHost, DEALData e DEALInterface para telemetria IoT, infraestrutura operada, compartilhamento de dados governado e gestão unificada.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#products">Explore o pacote</a>
-            <a class="button secondary" href="#architecture">Veja a plataforma</a>
+            <a class="button primary"
+               href="https://github.com/Smartappli/DEALIoT/discussions"
+               target="_blank"
+               rel="noopener noreferrer"><span class="button-spark" aria-hidden="true">&#10022;</span>Junte-se à comunidade</a>
+            <a class="button secondary" href="#products">Explore o pacote</a>
           </div>
           <dl class="hero-metrics" aria-label="Promessas da plataforma">
             <div>
@@ -325,6 +328,57 @@
           <div class="signal-line line-b" aria-hidden="true"></div>
           <div class="signal-line line-c" aria-hidden="true"></div>
           <div class="signal-line line-d" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section id="community" class="community section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Comunidade</p>
+          <h2>Um caminho público para avaliar sem atrito.</h2>
+          <p>
+            O conjunto DEAL expõe um caminho claro: testar localmente, definir o escopo de um piloto de 30 dias, documentar integrações e contribuir sem quebrar as barreiras de proteção da produção.
+          </p>
+        </div>
+        <div class="adoption-grid">
+          <article class="adoption-card reveal">
+            <span>Avaliar</span>
+            <h3>Demonstração reproduzível</h3>
+            <p>
+              Execute o teste de fumaça, escolha um fluxo de campo, meça o primeiro evento utilizável e capture evidências de decisão.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/demo-pilot-playbook.md">Leia o manual do piloto</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Contribua</span>
+            <h3>Comunidade estruturada</h3>
+            <p>
+              Discussões, formulários de feedback, regras de suporte, rituais comunitários e triagem de roteiros tornam a adoção do usuário legível e fácil de manter.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/discussions" target="_blank" rel="noopener noreferrer">Junte-se à comunidade</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Integrar</span>
+            <h3>Parceiros e casos de uso</h3>
+            <p>
+              Cenários concretos de pecuária, pesquisa, agricultura, indústria, publicação e parceiros tornam o ajuste mais fácil de validar.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/use-case-catalog.md">Catálogo de casos de uso</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Decidir</span>
+            <h3>Kit de decisão para champions</h3>
+            <p>
+              Comparação, avaliação rápida e materiais para champions internos ajudam as equipas a transformar interesse numa decisão de adoção mensurável.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/internal-champion-kit.md">Abrir o kit de decisão</a>
+          </article>
+          <article class="adoption-card reveal">
+            <span>Desenvolver</span>
+            <h3>Comunidade de contribuidores</h3>
+            <p>
+              Percursos de contribuição, etiquetas de mentoria, regras de governança e discussões de ajuda tornam mais fácil apoiar o desenvolvimento.
+            </p>
+            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/contributor-onboarding.md">Começar a contribuir</a>
+          </article>
         </div>
       </section>
       <section id="products" class="products section-shell">
@@ -508,57 +562,6 @@
           </article>
         </div>
       </section>
-      <section id="adoption" class="adoption section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Caminho de adoção</p>
-          <h2>Um caminho público para avaliar sem atrito.</h2>
-          <p>
-            O conjunto DEAL expõe um caminho claro: testar localmente, definir o escopo de um piloto de 30 dias, documentar integrações e contribuir sem quebrar as barreiras de proteção da produção.
-          </p>
-        </div>
-        <div class="adoption-grid">
-          <article class="adoption-card reveal">
-            <span>Avaliar</span>
-            <h3>Demonstração reproduzível</h3>
-            <p>
-              Execute o teste de fumaça, escolha um fluxo de campo, meça o primeiro evento utilizável e capture evidências de decisão.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/demo-pilot-playbook.md">Leia o manual do piloto</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Contribua</span>
-            <h3>Comunidade estruturada</h3>
-            <p>
-              Discussões, formulários de feedback, regras de suporte, rituais comunitários e triagem de roteiros tornam a adoção do usuário legível e fácil de manter.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/user-community-launch-plan.md">Plano comunitário</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Integrar</span>
-            <h3>Parceiros e casos de uso</h3>
-            <p>
-              Cenários concretos de pecuária, pesquisa, agricultura, indústria, publicação e parceiros tornam o ajuste mais fácil de validar.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/use-case-catalog.md">Catálogo de casos de uso</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Decidir</span>
-            <h3>Kit de decisão para champions</h3>
-            <p>
-              Comparação, avaliação rápida e materiais para champions internos ajudam as equipas a transformar interesse numa decisão de adoção mensurável.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/internal-champion-kit.md">Abrir o kit de decisão</a>
-          </article>
-          <article class="adoption-card reveal">
-            <span>Desenvolver</span>
-            <h3>Comunidade de contribuidores</h3>
-            <p>
-              Percursos de contribuição, etiquetas de mentoria, regras de governança e discussões de ajuda tornam mais fácil apoiar o desenvolvimento.
-            </p>
-            <a href="https://github.com/Smartappli/DEALIoT/blob/main/docs/community/contributor-onboarding.md">Começar a contribuir</a>
-          </article>
-        </div>
-      </section>
       <section id="faq" class="faq section-shell">
         <div class="section-heading reveal">
           <p class="eyebrow">Respostas diretas</p>
@@ -630,6 +633,6 @@
       <span>DEAL ecossistema</span>
       <span><a href="https://smartappli.io/" hreflang="en-US" lang="en-US">English</a> / <a href="https://smartappli.io/llms.txt">Contexto LLMS</a></span>
     </footer>
-    <script src="../app.js?v=20260610-header-v2" defer></script>
+    <script src="../app.js?v=20260711-community-v1" defer></script>
   </body>
 </html>

@@ -70,9 +70,9 @@ body {
   font-family: var(--font-body);
   font-size: 0.95rem;
   background:
-    radial-gradient(circle at 18% 6%, rgb(1 150 208 / 14%), transparent 30rem),
-    radial-gradient(circle at 82% 18%, rgb(20 184 197 / 14%), transparent 28rem),
-    linear-gradient(180deg, #f7fcff 0%, #ffffff 44%, #eef7fb 100%);
+    radial-gradient(circle at 12% 8%, rgb(1 150 208 / 18%), transparent 30rem),
+    radial-gradient(circle at 88% 16%, rgb(255 93 115 / 9%), transparent 26rem),
+    linear-gradient(180deg, #f7fcff 0%, #ffffff 42%, #eef7fb 100%);
   overflow-x: hidden;
 }
 
@@ -313,8 +313,14 @@ a {
 
 .nav-cta {
   color: #fff;
-  background: var(--acid);
-  box-shadow: 0 14px 36px rgb(1 150 208 / 22%);
+  background: linear-gradient(135deg, #0177ad, var(--acid));
+  box-shadow: 0 14px 36px rgb(1 150 208 / 26%);
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  box-shadow: 0 18px 42px rgb(1 150 208 / 34%);
+  transform: translateY(-1px);
 }
 
 .star-link,
@@ -345,8 +351,8 @@ main {
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   gap: clamp(1.5rem, 4vw, 4rem);
   align-items: center;
-  min-height: 78svh;
-  padding: 4rem 0 5rem;
+  min-height: min(76svh, 52rem);
+  padding: 4.5rem 0 4rem;
 }
 
 .hero::before {
@@ -382,6 +388,7 @@ h1 {
   max-width: 12.5ch;
   font-size: clamp(2.85rem, 7vw, 5.8rem);
   line-height: 0.92;
+  text-wrap: balance;
 }
 
 h2 {
@@ -423,23 +430,39 @@ h3 {
   font-weight: 900;
   border: 1px solid transparent;
   border-radius: 999px;
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 48px rgb(15 23 42 / 14%);
+  transform: translateY(-3px);
 }
 
 .button.primary {
   color: #fff;
   background: linear-gradient(135deg, #0177ad, var(--acid));
+  box-shadow: 0 16px 40px rgb(1 150 208 / 28%);
+}
+
+.button.primary:hover,
+.button.primary:focus-visible {
+  box-shadow: 0 22px 48px rgb(1 150 208 / 38%);
 }
 
 .button.secondary {
   color: var(--slate);
   background: rgb(255 255 255 / 72%);
   border-color: rgb(15 23 42 / 10%);
+}
+
+.button-spark {
+  display: inline-grid;
+  width: 1.45rem;
+  height: 1.45rem;
+  margin-right: 0.55rem;
+  color: var(--acid);
+  background: #fff;
+  border-radius: 50%;
+  place-items: center;
 }
 
 .hero-metrics {
@@ -451,10 +474,11 @@ h3 {
 }
 
 .hero-metrics div {
-  padding: 0.8rem;
-  background: rgb(255 255 255 / 76%);
-  border: 1px solid rgb(15 23 42 / 8%);
+  padding: 0.85rem 0.95rem;
+  background: rgb(255 255 255 / 88%);
+  border: 1px solid var(--line-dark);
   border-radius: var(--radius-sm);
+  box-shadow: 0 14px 36px rgb(15 23 42 / 7%);
 }
 
 .hero-metrics dt {
@@ -473,13 +497,13 @@ h3 {
   position: relative;
   min-height: 31rem;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid rgb(74 163 255 / 24%);
   border-radius: var(--radius-xl);
   background:
-    radial-gradient(circle at 20% 18%, rgb(1 150 208 / 14%), transparent 16rem),
-    radial-gradient(circle at 78% 76%, rgb(20 184 197 / 13%), transparent 16rem),
-    linear-gradient(145deg, rgb(255 255 255 / 88%), rgb(238 247 251 / 76%));
-  box-shadow: var(--shadow);
+    radial-gradient(circle at 18% 16%, rgb(1 150 208 / 34%), transparent 16rem),
+    radial-gradient(circle at 82% 78%, rgb(20 184 197 / 26%), transparent 17rem),
+    linear-gradient(145deg, #07111f, #0b2942 58%, #073b50);
+  box-shadow: 0 32px 90px rgb(7 17 31 / 24%);
 }
 
 .hero-orbit::before {
@@ -487,10 +511,10 @@ h3 {
   inset: 1.2rem;
   content: "";
   background-image:
-    linear-gradient(rgb(1 150 208 / 8%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(1 150 208 / 8%) 1px, transparent 1px);
+    linear-gradient(rgb(74 163 255 / 14%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(74 163 255 / 14%) 1px, transparent 1px);
   background-size: 30px 30px;
-  border: 1px solid rgb(1 150 208 / 8%);
+  border: 1px solid rgb(125 226 255 / 10%);
   border-radius: 24px;
   mask-image: radial-gradient(circle at center, black, transparent 80%);
 }
@@ -499,7 +523,7 @@ h3 {
   position: absolute;
   inset: 18% 14%;
   content: "";
-  border: 1px dashed rgb(1 150 208 / 30%);
+  border: 1px dashed rgb(125 226 255 / 38%);
   border-radius: 50%;
   animation: spin 36s linear infinite;
 }
@@ -518,7 +542,7 @@ h3 {
   min-height: 11rem;
   padding: 1.15rem;
   color: #fff;
-  background: linear-gradient(135deg, #0b1424, #0177ad 52%, var(--acid));
+  background: linear-gradient(135deg, #0b1424, #0177ad 48%, #12bde1);
   border-radius: 22px;
   box-shadow: 0 28px 80px rgb(1 150 208 / 22%);
   transform: translate(-50%, -50%) rotate(-2deg);
@@ -544,13 +568,19 @@ h3 {
 }
 
 .orbit-node {
-  color: var(--slate);
+  color: #fff;
   padding: 0.62rem 0.8rem;
-  background: rgb(255 255 255 / 80%);
-  border: 1px solid rgb(1 150 208 / 18%);
+  background: rgb(7 17 31 / 72%);
+  border: 1px solid rgb(125 226 255 / 28%);
   border-radius: 999px;
   box-shadow: 0 18px 52px rgb(15 23 42 / 12%);
   backdrop-filter: blur(12px);
+  animation: float-node 5.5s ease-in-out infinite;
+}
+
+.node-host,
+.node-interface {
+  animation-delay: -2.75s;
 }
 
 .node-iot {
@@ -614,7 +644,7 @@ h3 {
 .repositories,
 .architecture,
 .proof,
-.adoption,
+.community,
 .faq,
 .launch {
   padding: clamp(3rem, 6vw, 5.5rem) 0;
@@ -626,6 +656,11 @@ h3 {
   gap: 2rem;
   align-items: end;
   margin-bottom: 1.5rem;
+}
+
+.section-heading h2,
+.section-heading > p:last-child {
+  text-wrap: balance;
 }
 
 .section-heading .eyebrow {
@@ -651,6 +686,13 @@ h3 {
   border: 1px solid rgb(15 23 42 / 8%);
   border-radius: var(--radius-lg);
   box-shadow: 0 18px 56px rgb(15 23 42 / 9%);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.product-card:hover {
+  border-color: rgb(1 150 208 / 24%);
+  box-shadow: 0 26px 70px rgb(15 23 42 / 14%);
+  transform: translateY(-6px);
 }
 
 .product-card::before {
@@ -1020,45 +1062,94 @@ h3 {
 
 .adoption-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1rem;
   align-items: stretch;
+}
+
+.community {
+  position: relative;
+  margin-top: 1rem;
+  padding: clamp(2rem, 5vw, 4.25rem);
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 8% 12%, rgb(1 150 208 / 34%), transparent 22rem),
+    radial-gradient(circle at 92% 84%, rgb(255 93 115 / 20%), transparent 20rem),
+    linear-gradient(135deg, #07111f, #0b2942 58%, #073b50);
+  border: 1px solid rgb(74 163 255 / 24%);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 34px 100px rgb(7 17 31 / 24%);
+}
+
+.community::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgb(125 226 255 / 7%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(125 226 255 / 7%) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: linear-gradient(135deg, black, transparent 76%);
+}
+
+.community .section-heading,
+.community .adoption-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.community .section-heading h2 {
+  max-width: 15ch;
+}
+
+.community .section-heading > p:last-child {
+  color: rgb(255 255 255 / 72%);
+}
+
+.community .eyebrow {
+  color: #7de2ff;
 }
 
 .adoption-card {
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
   min-height: 21rem;
   padding: 1.2rem;
-  color: var(--ink);
-  background: var(--paper);
-  border: 1px solid rgb(15 23 42 / 8%);
+  color: #fff;
+  background: rgb(255 255 255 / 8%);
+  border: 1px solid rgb(255 255 255 / 13%);
   border-radius: var(--radius-lg);
-  box-shadow: 0 18px 56px rgb(15 23 42 / 9%);
+  box-shadow: 0 18px 56px rgb(0 0 0 / 13%);
+  backdrop-filter: blur(14px);
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
-.adoption-card:nth-child(2) {
-  background: linear-gradient(145deg, #f0fbff, var(--paper));
+.adoption-card:nth-child(-n + 2) {
+  grid-column: span 3;
 }
 
-.adoption-card:nth-child(3) {
-  color: var(--ink);
-  background: linear-gradient(145deg, #ffffff, #edf7fb);
+.adoption-card:hover {
+  background: rgb(255 255 255 / 13%);
+  border-color: rgb(125 226 255 / 34%);
+  transform: translateY(-5px);
 }
 
 .adoption-card span {
   display: inline-flex;
   margin-bottom: 3.4rem;
-  color: var(--acid);
+  color: #7de2ff;
 }
 
 .adoption-card:nth-child(3) span,
 .adoption-card:nth-child(3) p {
-  color: var(--muted);
+  color: inherit;
 }
 
 .adoption-card p {
-  color: #586356;
+  color: rgb(255 255 255 / 70%);
   line-height: 1.6;
 }
 
@@ -1072,6 +1163,11 @@ h3 {
   text-decoration-color: var(--acid);
   text-decoration-thickness: 0.16em;
   text-underline-offset: 0.24em;
+}
+
+.adoption-card a::after {
+  margin-left: 0.5rem;
+  content: "↗";
 }
 
 .faq-grid {
@@ -1200,6 +1296,17 @@ h3 {
   }
 }
 
+@keyframes float-node {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1307,6 +1414,11 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .adoption-card,
+  .adoption-card:nth-child(-n + 2) {
+    grid-column: auto;
+  }
+
   .architecture-board::before {
     top: 2rem;
     right: auto;
@@ -1366,6 +1478,11 @@ h3 {
   .hero {
     min-height: auto;
     padding: 3rem 0 3.5rem;
+  }
+
+  .community {
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
   }
 
   h1 {
