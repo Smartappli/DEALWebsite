@@ -76,12 +76,76 @@ function setupLanguageSelects() {
   }
 }
 
+function copyShareUrl(url) {
+  if (navigator.clipboard?.writeText) {
+    return navigator.clipboard.writeText(url).then(() => true).catch(() => false);
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = url;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  document.body.append(textarea);
+  textarea.select();
+
+  let copied = false;
+  try {
+    copied = document.execCommand("copy");
+  } catch {
+    copied = false;
+  }
+
+  textarea.remove();
+  return Promise.resolve(copied);
+}
+
+function setupShareButtons() {
+  const shareButtons = Array.from(document.querySelectorAll("[data-share-button]"));
+  const canonicalUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+  const description = document.querySelector('meta[name="description"]')?.content || "";
+
+  for (const button of shareButtons) {
+    button.addEventListener("click", async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: document.title, text: description, url: canonicalUrl });
+          return;
+        } catch (error) {
+          if (error?.name === "AbortError") {
+            return;
+          }
+        }
+      }
+
+      const copied = await copyShareUrl(canonicalUrl);
+      if (!copied) {
+        return;
+      }
+
+      const label = button.querySelector("[data-share-button-label]");
+      const defaultLabel = button.dataset.defaultLabel;
+      if (!label || !defaultLabel) {
+        return;
+      }
+
+      label.textContent = button.dataset.copiedLabel || defaultLabel;
+      button.classList.add("is-copied");
+      window.setTimeout(() => {
+        label.textContent = defaultLabel;
+        button.classList.remove("is-copied");
+      }, 1800);
+    });
+  }
+}
+
 function startInteractiveControls() {
   for (const stylesheet of deferredStylesheets) {
     stylesheet.media = "all";
   }
 
   setupLanguageSelects();
+  setupShareButtons();
   updateHeaderShadow();
 }
 

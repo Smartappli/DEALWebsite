@@ -1095,6 +1095,7 @@ h3 {
 }
 
 .community .section-heading,
+.community .community-actions,
 .community .adoption-grid {
   position: relative;
   z-index: 1;
@@ -1110,6 +1111,62 @@ h3 {
 
 .community .eyebrow {
   color: #7de2ff;
+}
+
+.community-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+}
+
+.community-action {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.75rem 0.9rem;
+  color: #fff;
+  font: 900 0.88rem var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  background: rgb(255 255 255 / 8%);
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: var(--radius-md);
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+button.community-action {
+  width: 100%;
+}
+
+.community-action:hover,
+.community-action:focus-visible {
+  background: rgb(255 255 255 / 14%);
+  border-color: rgb(125 226 255 / 38%);
+  transform: translateY(-3px);
+}
+
+.community-action.primary {
+  background: linear-gradient(135deg, #0177ad, var(--acid));
+  border-color: rgb(125 226 255 / 32%);
+  box-shadow: 0 18px 42px rgb(1 150 208 / 20%);
+}
+
+.community-action.is-copied {
+  color: #07111f;
+  background: #7de2ff;
+}
+
+.community-action-icon {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 2.15rem;
+  height: 2.15rem;
+  color: #07111f;
+  background: #fff;
+  border-radius: 50%;
+  place-items: center;
 }
 
 .adoption-card {
@@ -1290,6 +1347,11 @@ h3 {
   transform: translateY(0) scale(1);
 }
 
+.community:target .reveal {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -1409,6 +1471,7 @@ h3 {
 
   .product-grid,
   .repo-grid,
+  .community-actions,
   .adoption-grid,
   .architecture-board {
     grid-template-columns: 1fr;
