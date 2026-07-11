@@ -1,4 +1,4 @@
-const CACHE_NAME = "dealiot-pwa-v13-participation-actions";
+const CACHE_NAME = "dealiot-pwa-v16-reliable-revalidation";
 const ASSET_VERSION = "20260711-community-v4";
 const ROUTE_ASSETS = [
   "./",
@@ -26,10 +26,12 @@ const ROUTE_ASSETS = [
   "./hr/",
   "./bg/",
 ];
-const STATIC_ASSETS = [
+const CORE_ASSETS = [
   "./offline.html",
   `./styles.css?v=${ASSET_VERSION}`,
   `./app.js?v=${ASSET_VERSION}`,
+];
+const OPTIONAL_ASSETS = [
   "./site.webmanifest",
   "./assets/mark.svg",
   "./assets/icon-192.png",
@@ -37,10 +39,16 @@ const STATIC_ASSETS = [
   "./assets/icon-maskable-512.png",
   "./assets/social-card.png",
 ];
-const CORE_ASSETS = [...ROUTE_ASSETS, ...STATIC_ASSETS];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS)));
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(async (cache) => {
+      await cache.addAll(CORE_ASSETS);
+      await Promise.all(
+        [...ROUTE_ASSETS, ...OPTIONAL_ASSETS].map((asset) => cache.add(asset).catch(() => undefined)),
+      );
+    }),
+  );
   self.skipWaiting();
 });
 
@@ -87,17 +95,20 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  event.respondWith(staleWhileRevalidate(request));
+  event.respondWith(staleWhileRevalidate(request, event));
 });
 
 function cacheResponse(request, response) {
   if (!response || !response.ok) {
-    return response;
+    return Promise.resolve(response);
   }
 
   const responseCopy = response.clone();
-  caches.open(CACHE_NAME).then((cache) => cache.put(request, responseCopy));
-  return response;
+  return caches
+    .open(CACHE_NAME)
+    .then((cache) => cache.put(request, responseCopy))
+    .catch(() => undefined)
+    .then(() => response);
 }
 
 function networkFirst(request, fallbackUrl) {
@@ -118,12 +129,11 @@ function networkFirst(request, fallbackUrl) {
     );
 }
 
-function staleWhileRevalidate(request) {
-  return caches.match(request).then((cached) => {
-    const networkResponse = fetch(request)
-      .then((response) => cacheResponse(request, response))
-      .catch(() => cached || caches.match(request, { ignoreSearch: true }));
+function staleWhileRevalidate(request, event) {
+  const networkResponse = fetch(request)
+    .then((response) => cacheResponse(request, response))
+    .catch(() => caches.match(request, { ignoreSearch: true }).then((cached) => cached || Response.error()));
 
-    return cached || networkResponse;
-  });
+  event.waitUntil(networkResponse.then(() => undefined));
+  return caches.match(request).then((cached) => cached || networkResponse);
 }
