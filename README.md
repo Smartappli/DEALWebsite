@@ -9,6 +9,14 @@ Static Progressive Web App for presenting DEALIoT, DEALHost, DEALData and DEALIn
 - DEALData: https://github.com/Smartappli/DEALData
 - DEALInterface: https://github.com/Smartappli/DEALInterface
 
+## Deploy The DEAL Suite
+
+The repositories share HTTP and event contracts, but their current `main`
+branches do not yet form a turnkey unified deployment. Read the
+[full-stack architecture and deployment notice](docs/deployment/full-stack.md)
+for the audited compatibility status, required network and gateway contract,
+deployment gates, recommended start order, and end-to-end acceptance checks.
+
 ## Local preview
 
 ```bash
@@ -72,6 +80,13 @@ The public website ships with:
 - Text metadata files such as `robots.txt`, `sitemap.xml`, `humans.txt` and `llms.txt` use a one-day cache.
 - `node_modules/` is intentionally committed in this repository to mirror the transferred website workspace exactly.
 
-## Deployment
+## Deploy This Website
 
-The website is externalized on `smartappli.io`. The repository is ready to be published as a static site from the repository root or through a GitHub Pages workflow.
+The website is externalized on `smartappli.io`. It is independent from the operational DEAL services
+and can be published as a static site from the repository root or through a GitHub Pages workflow.
+When previewing it alongside the DEALIoT development stack, use a port other than `8080`, which is
+already used by the local VerneMQ WebSocket listener:
+
+```bash
+python -m http.server 8086 --directory .
+```
