@@ -92,8 +92,9 @@ original repositories remain the historical reference for commits made before co
 [migration guide](https://github.com/Smartappli/ArchiDEAL/blob/main/docs/migration.md) describes the
 cutover and rollback policy.
 
-For a release, pin the ArchiDEAL commit and every container image digest. Run both root workflows,
-the component test suites, and the end-to-end smoke test before creating a release tag.
+For a release, pin the ArchiDEAL commit, every container image digest, schema versions, topic
+configuration, and database migration state. Run both root workflows, the component test suites,
+and the end-to-end smoke test before creating a release tag.
 
 ## Production gates
 
