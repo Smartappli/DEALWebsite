@@ -50,6 +50,8 @@ DEALInterface is the unified management console for the DEAL suite. It keeps DEA
 
 ## Source Documents
 
+- ArchiDEAL README: https://github.com/Smartappli/ArchiDEAL/blob/main/README.md
+- ArchiDEAL deployment guide: https://github.com/Smartappli/ArchiDEAL/blob/main/docs/deployment.md
 - Full-stack deployment notice: https://github.com/Smartappli/DEALWebsite/blob/main/docs/deployment/full-stack.md
 - DEALIoT README: https://github.com/Smartappli/DEALIoT/blob/main/README.md
 - DEALHost README: https://github.com/Smartappli/DEALHost/blob/main/README.md

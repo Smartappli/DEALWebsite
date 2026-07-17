@@ -4,6 +4,7 @@ Static Progressive Web App for presenting DEALIoT, DEALHost, DEALData and DEALIn
 
 ## Public Repositories
 
+- ArchiDEAL: https://github.com/Smartappli/ArchiDEAL
 - DEALIoT: https://github.com/Smartappli/DEALIoT
 - DEALHost: https://github.com/Smartappli/DEALHost
 - DEALData: https://github.com/Smartappli/DEALData
@@ -11,11 +12,10 @@ Static Progressive Web App for presenting DEALIoT, DEALHost, DEALData and DEALIn
 
 ## Deploy The DEAL Suite
 
-The repositories share HTTP and event contracts, but their current `main`
-branches do not yet form a turnkey unified deployment. Read the
+The operational repositories are consolidated in the ArchiDEAL monorepo. Read the
 [full-stack architecture and deployment notice](docs/deployment/full-stack.md)
-for the audited compatibility status, required network and gateway contract,
-deployment gates, recommended start order, and end-to-end acceptance checks.
+for the validated local deployment, communication path, production gates, and
+migration policy. DEALWebsite remains an independent static site.
 
 ## Local preview
 
