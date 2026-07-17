@@ -5,10 +5,11 @@
 Canonical English website: https://smartappli.io/
 French website: https://smartappli.io/fr/
 Repositories:
-- DEALIoT: https://github.com/Smartappli/DEALIoT
-- DEALHost: https://github.com/Smartappli/DEALHost
-- DEALData: https://github.com/Smartappli/DEALData
-- DEALInterface: https://github.com/Smartappli/DEALInterface
+- ArchiDEAL (canonical operational repository): https://github.com/Smartappli/ArchiDEAL
+- DEALIoT (historical source repository): https://github.com/Smartappli/DEALIoT
+- DEALHost (historical source repository): https://github.com/Smartappli/DEALHost
+- DEALData (historical source repository): https://github.com/Smartappli/DEALData
+- DEALInterface (historical source repository): https://github.com/Smartappli/DEALInterface
 Contact: contact@smartappli.com
 Default language: English US (`en-US`).
 Localized routes: all 24 official EU languages, with English US (`en-US`) as the default route.
@@ -50,7 +51,12 @@ DEALInterface is the unified management console for the DEAL suite. It keeps DEA
 
 ## Source Documents
 
-- README: https://github.com/Smartappli/DEALIoT/blob/main/README.md
+- ArchiDEAL README: https://github.com/Smartappli/ArchiDEAL/blob/main/README.md
+- ArchiDEAL deployment guide: https://github.com/Smartappli/ArchiDEAL/blob/main/docs/deployment.md
+- Full-stack deployment notice: https://github.com/Smartappli/DEALWebsite/blob/main/docs/deployment/full-stack.md
+- DEALIoT README: https://github.com/Smartappli/DEALIoT/blob/main/README.md
+- DEALHost README: https://github.com/Smartappli/DEALHost/blob/main/README.md
+- DEALData README: https://github.com/Smartappli/DEALData/blob/main/README.md
 - DEALInterface README: https://github.com/Smartappli/DEALInterface/blob/main/README.md
 - Adoption playbook: https://github.com/Smartappli/DEALIoT/blob/main/docs/community/adoption-playbook.md
 - Architecture popularity playbook: https://github.com/Smartappli/DEALIoT/blob/main/docs/community/architecture-popularity-playbook.md

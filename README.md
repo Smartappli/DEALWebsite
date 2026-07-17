@@ -4,10 +4,18 @@ Static Progressive Web App for presenting DEALIoT, DEALHost, DEALData and DEALIn
 
 ## Public Repositories
 
+- ArchiDEAL: https://github.com/Smartappli/ArchiDEAL
 - DEALIoT: https://github.com/Smartappli/DEALIoT
 - DEALHost: https://github.com/Smartappli/DEALHost
 - DEALData: https://github.com/Smartappli/DEALData
 - DEALInterface: https://github.com/Smartappli/DEALInterface
+
+## Deploy The DEAL Suite
+
+The operational repositories are consolidated in the ArchiDEAL monorepo. Read the
+[full-stack architecture and deployment notice](docs/deployment/full-stack.md)
+for the validated local deployment, communication path, production gates, and
+migration policy. DEALWebsite remains an independent static site.
 
 ## Local preview
 
@@ -72,6 +80,13 @@ The public website ships with:
 - Text metadata files such as `robots.txt`, `sitemap.xml`, `humans.txt` and `llms.txt` use a one-day cache.
 - `node_modules/` is intentionally committed in this repository to mirror the transferred website workspace exactly.
 
-## Deployment
+## Deploy This Website
 
-The website is externalized on `smartappli.io`. The repository is ready to be published as a static site from the repository root or through a GitHub Pages workflow.
+The website is externalized on `smartappli.io`. It is independent from the operational DEAL services
+and can be published as a static site from the repository root or through a GitHub Pages workflow.
+When previewing it alongside the ArchiDEAL development stack, use a port other than `8080`, which is
+already published by the local ArchiDEAL APISIX gateway:
+
+```bash
+python -m http.server 8086 --directory .
+```
