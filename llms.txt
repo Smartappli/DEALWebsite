@@ -5,10 +5,11 @@
 Canonical English website: https://smartappli.io/
 French website: https://smartappli.io/fr/
 Repositories:
-- DEALIoT: https://github.com/Smartappli/DEALIoT
-- DEALHost: https://github.com/Smartappli/DEALHost
-- DEALData: https://github.com/Smartappli/DEALData
-- DEALInterface: https://github.com/Smartappli/DEALInterface
+- ArchiDEAL (canonical operational repository): https://github.com/Smartappli/ArchiDEAL
+- DEALIoT (historical source repository): https://github.com/Smartappli/DEALIoT
+- DEALHost (historical source repository): https://github.com/Smartappli/DEALHost
+- DEALData (historical source repository): https://github.com/Smartappli/DEALData
+- DEALInterface (historical source repository): https://github.com/Smartappli/DEALInterface
 Contact: contact@smartappli.com
 Default language: English US (`en-US`).
 Localized routes: all 24 official EU languages, with English US (`en-US`) as the default route.
