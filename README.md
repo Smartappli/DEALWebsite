@@ -84,8 +84,8 @@ The public website ships with:
 
 The website is externalized on `smartappli.io`. It is independent from the operational DEAL services
 and can be published as a static site from the repository root or through a GitHub Pages workflow.
-When previewing it alongside the DEALIoT development stack, use a port other than `8080`, which is
-already used by the local VerneMQ WebSocket listener:
+When previewing it alongside the ArchiDEAL development stack, use a port other than `8080`, which is
+already published by the local ArchiDEAL APISIX gateway:
 
 ```bash
 python -m http.server 8086 --directory .
