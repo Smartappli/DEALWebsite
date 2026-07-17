@@ -50,7 +50,10 @@ DEALInterface is the unified management console for the DEAL suite. It keeps DEA
 
 ## Source Documents
 
-- README: https://github.com/Smartappli/DEALIoT/blob/main/README.md
+- Full-stack deployment notice: https://github.com/Smartappli/DEALWebsite/blob/main/docs/deployment/full-stack.md
+- DEALIoT README: https://github.com/Smartappli/DEALIoT/blob/main/README.md
+- DEALHost README: https://github.com/Smartappli/DEALHost/blob/main/README.md
+- DEALData README: https://github.com/Smartappli/DEALData/blob/main/README.md
 - DEALInterface README: https://github.com/Smartappli/DEALInterface/blob/main/README.md
 - Adoption playbook: https://github.com/Smartappli/DEALIoT/blob/main/docs/community/adoption-playbook.md
 - Architecture popularity playbook: https://github.com/Smartappli/DEALIoT/blob/main/docs/community/architecture-popularity-playbook.md
