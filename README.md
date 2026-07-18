@@ -5,10 +5,10 @@ Static Progressive Web App for presenting DEALIoT, DEALHost, DEALData and DEALIn
 ## Public Repositories
 
 - ArchiDEAL: https://github.com/Smartappli/ArchiDEAL
-- DEALIoT: https://github.com/Smartappli/DEALIoT
-- DEALHost: https://github.com/Smartappli/DEALHost
-- DEALData: https://github.com/Smartappli/DEALData
-- DEALInterface: https://github.com/Smartappli/DEALInterface
+- DEALIoT component: https://github.com/Smartappli/ArchiDEAL/tree/main/components/DEALIoT
+- DEALHost component: https://github.com/Smartappli/ArchiDEAL/tree/main/components/DEALHost
+- DEALData component: https://github.com/Smartappli/ArchiDEAL/tree/main/components/DEALData
+- DEALInterface component: https://github.com/Smartappli/ArchiDEAL/tree/main/components/DEALInterface
 
 ## Deploy The DEAL Suite
 
